@@ -29,8 +29,3 @@ def tokenize_expression(exp: str):
         ],
     )
     return expr.parse_string(exp)
-
-
-x = tokenize_expression("sin(2*x + y^2)")
-
-print(x)
