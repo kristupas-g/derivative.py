@@ -46,6 +46,6 @@ def newtons_method(func, derivative, point, previous_value, accuracy):
     return newtons_method(func, derivative, value, value, accuracy)
 
 
-[func, derivative] = get_funcs("2*x**2+2*x-2")
+[func, derivative] = get_funcs("cos(x)")
 get_points_of_interest(func, [0, 10])
-newtons_method(func, derivative, points_of_interest[0][0] + 0.5, None, 3)
+newtons_method(func, derivative, points_of_interest[0][0] + 0.5, None, 5)
