@@ -46,6 +46,11 @@ def newtons_method(func, derivative, point, previous_value, accuracy):
     return newtons_method(func, derivative, value, value, accuracy)
 
 
-[func, derivative] = get_funcs("cos(x)")
-get_points_of_interest(func, [0, 10])
-newtons_method(func, derivative, points_of_interest[0][0] + 0.5, None, 5)
+[func, derivative] = get_funcs(input('Įveskite funkciją\n'))
+get_points_of_interest(func, [-10, 10])
+if len(points_of_interest) != 0:
+    for i in range(0, len(points_of_interest)):
+        print("\nKeičia ženklą taške:", points_of_interest[i][0])
+        newtons_method(func, derivative, points_of_interest[i][0] + 0.3, None, 5)
+else:
+    print("\nThere are no points of interest")
