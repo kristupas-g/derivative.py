@@ -16,3 +16,8 @@
 
 `python3 newton.py`
 `python3 taylor.py`
+
+# Uzduoti atliko
+
+- Kristupas Gaidys
+- Augustina Petraitytė
